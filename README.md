@@ -1,1 +1,1 @@
-ДЗ находится в папке first project
+ДЗ находится в папке first project/src
