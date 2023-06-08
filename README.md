@@ -5,4 +5,6 @@
 тест2
 
 
+зачётное задание в main
+
 Руководство пользователя: https://docs.google.com/document/d/1Xe1tWwwiMUg1nS2x3tNPfP10BiwFFE5j/edit
