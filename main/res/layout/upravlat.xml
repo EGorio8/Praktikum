@@ -8,6 +8,17 @@
     tools:context=".upravlat">
 
     <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="413dp"
+        android:layout_height="74dp"
+        android:background="#132C6A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+    <ImageView
         android:id="@+id/imageView15"
         android:layout_width="413dp"
         android:layout_height="74dp"
@@ -38,9 +49,25 @@
         app:layout_constraintVertical_bias="0.006" />
 
     <Button
+        android:id="@+id/addButton4"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:onClick="add"
+        android:paddingLeft="35dp"
+        android:text="Добавить"
+        app:backgroundTint="#3E4A77"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView18"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
         android:id="@+id/button19"
         android:layout_width="67dp"
         android:layout_height="43dp"
+        android:onClick="menu"
         app:backgroundTint="#3E4A77"
         app:icon="?attr/actionModeCloseDrawable"
         app:iconTint="#FFFFFF"
@@ -54,14 +81,16 @@
         app:strokeColor="#33436A" />
 
     <ScrollView
-        android:layout_width="410dp"
-        android:layout_height="588dp"
-        android:layout_marginTop="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="411dp"
+        android:layout_height="509dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" >
+        app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -149,7 +178,7 @@
                 <ImageView
                     android:id="@+id/imageView30"
                     android:layout_width="match_parent"
-                    android:layout_height="179dp"
+                    android:layout_height="149dp"
                     android:visibility="visible"
                     app:srcCompat="@drawable/komanda"
                     tools:ignore="DuplicateIds"
@@ -158,9 +187,10 @@
 
                 <Button
                     android:id="@+id/button21"
-                    android:layout_width="378dp"
-                    android:layout_height="41dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
                     android:fontFamily="sans-serif"
+                    android:onClick="upr"
                     android:text="Управлять"
                     android:textAllCaps="true"
                     android:textColor="#FFFFFF"
@@ -176,7 +206,7 @@
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="41dp" />
 
                 <TextView
                     android:id="@+id/textView16"

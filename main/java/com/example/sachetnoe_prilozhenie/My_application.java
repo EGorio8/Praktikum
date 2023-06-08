@@ -12,7 +12,7 @@ import android.widget.SimpleCursorAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class main_menu extends AppCompatActivity {
+public class My_application extends AppCompatActivity {
 
     ListView userList;
     DatabaseHelper databaseHelper;
@@ -23,20 +23,20 @@ public class main_menu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);
+        setContentView(R.layout.application_my);
 
-    userList = findViewById(R.id.list);
+        userList = findViewById(R.id.list);
         userList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Intent intent = new Intent(getApplicationContext(), UserActivity.class);
-            intent.putExtra("id", id);
-            startActivity(intent);
-        }
-    });
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getApplicationContext(), UserActivity.class);
+                intent.putExtra("id", id);
+                startActivity(intent);
+            }
+        });
 
-    databaseHelper = new DatabaseHelper(getApplicationContext());
-}
+        databaseHelper = new DatabaseHelper(getApplicationContext());
+    }
 
     @Override
     public void onResume() {
@@ -55,14 +55,8 @@ public class main_menu extends AppCompatActivity {
     }
 
     // по нажатию на кнопку запускаем UserActivity для добавления данных
-
-    public void home(View view) {
-        Intent intent = new Intent(this, my_world.class);
-        startActivity(intent);
-    }
-
-    public void use(View view) {
-        Intent intent = new Intent(this, upravlat.class);
+    public void add(View view) {
+        Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
     }
 

@@ -46,6 +46,12 @@
         <activity
             android:name=".main_menu"
             android:exported="false" />
+        <activity
+            android:name=".My_application"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
