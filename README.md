@@ -3,8 +3,3 @@
 //ДЗ находится в папке bolshe_menshe/src 15.03.23
 //ДЗ находится в папке stroki/src 23.03.23
 тест2
-
-
-зачётное задание в main
-
-Руководство пользователя: https://docs.google.com/document/d/1Xe1tWwwiMUg1nS2x3tNPfP10BiwFFE5j/edit
